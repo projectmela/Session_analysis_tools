@@ -1,7 +1,7 @@
 
 
 # Srt analyzer of drone flight
-This code helps you in analyzing your drone session using the SRT files created. The code analyses the SRT files of the flight session and gives you output, identifying errors and other unique data from each session.
+This code helps you in analyzing your drone session using the SRT files created. The code analyses the SRT files of the flight session and gives you output, identifying errors and other unique data from each session. This particular code is used for drone recording in which 3 different drones record simultaneously and run relays when required.
 
 1)It creates a CSV file combining all the data. The information in the CSV file is:
 Flight number, Global start/end time, max/min-height, drift status, height variation, frame drop, miss clicks, start/end frame, relay video.
