@@ -1,6 +1,6 @@
 name: srtanalysis
 channels:
- - conda-forge
+  - conda-forge
 dependencies:
   - python=3.10.9 
   - numpy=1.23.5
