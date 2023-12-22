@@ -83,7 +83,9 @@ class FileRenamer:
             print(f"{file_type} files successfully renamed.")
 
 def main():
-    srt_root_folder = input("Enter the file location for SRT: ")
+    # srt_root_folder = input("Enter the file location for SRT: ")
+
+    srt_root_folder = "D:\\MELA\\Renaming_data\\20230312\\SE_Lek1\\P1D1"
 
     # Check if the entered directory exists and is a valid directory
     if not os.path.exists(srt_root_folder) or not os.path.isdir(srt_root_folder):
@@ -92,8 +94,10 @@ def main():
         srt_renamer = FileRenamer(srt_root_folder)
         srt_renamer.rename_srt_files()
         srt_renamer.display_message("SRT")
+    
+    # video_root_folder = input("Enter the folder location of video files: ")
 
-    video_root_folder = input("Enter the folder location of video files: ")
+    video_root_folder = "D:\\MELA\\Renaming_data\\20230312\\SE_Lek1\\P1D1"
 
     # Check if the entered directory exists and is a valid directory
     if video_root_folder and (not os.path.exists(video_root_folder) or not os.path.isdir(video_root_folder)):
